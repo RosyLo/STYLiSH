@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description" content="Stylish會員，優惠升級" />
+
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+  </head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SMP0F2QQYJ"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SMP0F2QQYJ");
+  </script>
+
+  <body>
+    <script src="./js/profile.js"></script>
+    <header>
+      <div class="logo">
+        <a href="./"> <img alt="logo.png" src="./img/logo.png" /></a>
+      </div>
+      <div class="searchMobile">
+        <img class="search_mobile_icon" alt="search" src="./img/search.png" />
+      </div>
+      <form class="form_mobile" action="index.html" method="GET">
+        <input type="text" class="text_mobile" name="keyword" />
+      </form>
+      <nav>
+        <div class="item">
+          <a href="./?tag=women">女裝</a>
+        </div>
+        <div class="item">
+          <a href="./?tag=men">男裝</a>
+        </div>
+        <div class="item">
+          <a href="./?tag=accessories">配件</a>
+        </div>
+      </nav>
+      <div class="feature">
+        <form class="form" action="index.html" method="GET">
+          <input type="text" class="search" name="keyword" />
+        </form>
+        <a href="./shopcart.html" class="cart">
+          <div id="cart-qty" class="qty"></div>
+        </a>
+        <div class="member">
+          <img alt="to-profile-page" src="./img/member.png" />
+        </div>
+      </div>
+    </header>
+    <nav class="mobile">
+      <div class="item">
+        <a href="./?tag=women">女裝</a>
+      </div>
+      <div class="item">
+        <a href="./?tag=men">男裝</a>
+      </div>
+      <div class="item" style="border-right: 0px">
+        <a href="./?tag=accessories">配件</a>
+      </div>
+    </nav>
+    <div class="feature-mobile">
+      <a class="item" href="./shopcart.html">
+        <div class="cart">
+          <div id="cart-qty" class="qty"></div>
+        </div>
+        &nbsp &nbsp &nbsp 購物車
+      </a>
+      <div class="member">
+        <img class="member" alt="to-profile-page" src="img/member-mobile.png" />
+        &nbsp &nbsp &nbsp 會員
+      </div>
+    </div>
+    <main>
+      <div class="profileWrap">
+        <div class="memberHello">
+          <!-- <span>Hello! &nbsp&nbsp</span><span class="membername">羅思穎</span>
+          &nbsp&nbsp&nbsp&nbsp<img class="memberpicture" src="./img/main.jpg" /> -->
+        </div>
+        <div class="memberInfo">
+          <h3>您的會員資料</h3>
+          <table>
+            <tr>
+              <td>會員姓名</td>
+              <td class="membername"></td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td class="memberemail"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="checkoutbottom"><span>會員登出</span></div>
+      </div>
+    </main>
+    <footer>
+      <div class="view">
+        <div class="link n1">
+          <div class="item">關於 Stylish</div>
+          <div class="item">服務條款</div>
+          <div class="item">隱私條款</div>
+        </div>
+        <div class="link n2">
+          <div class="item">聯絡我們</div>
+          <div class="item">FAQ</div>
+        </div>
+        <div class="social">
+          <img alt="line" src="img/line.png" />
+          <img alt="twitter" src="img/twitter.png" />
+          <img alt="facebook" src="img/facebook.png" />
+        </div>
+        <div class="copyright" style="color: #828282">
+          &copy 2018. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="./js/lib.js"></script>
+    <script src="./js/cart.js"></script>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+  </body>
+</html>

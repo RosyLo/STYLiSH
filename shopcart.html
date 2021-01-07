@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description" content="Stylish購物車，結帳再享會員價" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/shopcart.css" />
+  </head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SMP0F2QQYJ"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SMP0F2QQYJ");
+  </script>
+
+  <body>
+    <script src="./js/fb.js"></script>
+    <header>
+      <div class="logo">
+        <a href="./"> <img alt="logo.png" src="./img/logo.png" /></a>
+      </div>
+      <div class="searchMobile">
+        <img class="search_mobile_icon" alt="search" src="./img/search.png" />
+      </div>
+      <form class="form_mobile" action="index.html" method="GET">
+        <input type="text" class="text_mobile" name="keyword" />
+      </form>
+      <nav>
+        <div class="item">
+          <a href="./?tag=women">女裝</a>
+        </div>
+        <div class="item">
+          <a href="./?tag=men">男裝</a>
+        </div>
+        <div class="item">
+          <a href="./?tag=accessories">配件</a>
+        </div>
+      </nav>
+      <div class="feature">
+        <form class="form" action="index.html" method="GET">
+          <input type="text" class="search" name="keyword" />
+        </form>
+        <a href="./shopcart.html" class="cart">
+          <div id="cart-qty" class="qty"></div>
+        </a>
+        <div class="member">
+          <img alt="to-profile-page" src="./img/member.png" />
+        </div>
+      </div>
+    </header>
+    <nav class="mobile">
+      <div class="item">
+        <a href="./?tag=women">女裝</a>
+      </div>
+      <div class="item">
+        <a href="./?tag=men">男裝</a>
+      </div>
+      <div class="item" style="border-right: 0px">
+        <a href="./?tag=accessories">配件</a>
+      </div>
+    </nav>
+    <div class="feature-mobile">
+      <a class="item" href="./shopcart.html">
+        <div class="cart">
+          <div id="cart-qty" class="qty"></div>
+        </div>
+        &nbsp &nbsp &nbsp 購物車
+      </a>
+      <div class="member">
+        <img class="member" alt="to-profile-page" src="img/member-mobile.png" />
+        &nbsp &nbsp &nbsp 會員
+      </div>
+    </div>
+
+    <main>
+      <div class="cartview">
+        <div class="cartoverall">
+          <div class="cartTitle">
+            <div class="cartspace">&nbsp</div>
+            <div class="cartqty">數量</div>
+            <div class="price">單價</div>
+            <div class="subtotal">小計</div>
+            <div class="cartDelete"></div>
+          </div>
+          <div class="cartList">
+            <!-- <div class="cartItem">
+              <div class="cartContent">
+                <img class="picture" src="./img/main.jpg" />
+                <div class="details">
+                  <div class ="itemname"></div>
+                  <div class ="itemid"></div>
+                  <div class ="itemcolor"></div>
+                  <div class ="itemsize"></div>
+                  xxxxxx</div>
+              </div>
+              <div class="cartqty">
+                <select>
+                  <option value="1">1</option>
+                  <option value="1">1</option>
+                  <option value="1">1</option>
+                </select>
+              </div>
+              <div class="price">NT. 599</div>
+              <div class="subtotal">NT. 599</div>
+              <div class="cartDelete">
+                <img src="./img/cart-remove.png" />
+              </div>
+            </div>
+          </div> -->
+          </div>
+        </div>
+        <div class="countrypay">
+          <div class="paywrap">
+            <span>配送國家</span>
+            <select class="payselect">
+              <option class="select">台灣或離島</option>
+            </select>
+          </div>
+          <div class="paywrap">
+            <span>付款方式</span>
+            <select class="payselect">
+              <option class="select">信用卡付款</option>
+            </select>
+          </div>
+        </div>
+        <div class="reminder">
+          <div>※ 提醒您：</div>
+          <div>● 請填寫正確收件人資訊，避免包裹配送不達</div>
+          <div>● 請填寫正確收件人姓名 ( 與證件相符 )，避免無法領取</div>
+        </div>
+        <div class="recipient">
+          <div class="recipientTitle">收件資料</div>
+          <div class="box">
+            <div class="text">收件人姓名</div>
+            <div class="input">
+              <input type="text" id="receive-name" class="textinput" value="" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">Email</div>
+            <div class="input">
+              <input
+                type="text"
+                id="receive-email"
+                class="textinput"
+                value=""
+              />
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">手機號碼</div>
+            <div class="input">
+              <input
+                type="text"
+                id="receive-phone"
+                class="textinput"
+                value=""
+              />
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">收件地址</div>
+            <div class="input">
+              <input
+                type="text"
+                id="receive-address"
+                class="textinput"
+                value=""
+              />
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">配送時間</div>
+            <div class="input">
+              <label>
+                <input type="radio" name="recipient-time" value="morning" />
+                <span class="time">08:00 - 12:00</span>
+              </label>
+            </div>
+            <div class="input">
+              <label>
+                <input type="radio" name="recipient-time" value="afternoon" />
+                <span class="time">14:00 - 18:00</span>
+              </label>
+            </div>
+            <div class="input">
+              <label>
+                <input
+                  type="radio"
+                  name="recipient-time"
+                  value="anytime"
+                  checked
+                />
+                <span class="time">不指定</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="payment">
+          <div class="recipient">
+            <div class="recipientTitle">付款資料</div>
+            <div class="box">
+              <div class="text">信用卡號碼</div>
+              <div class="input">
+                <div
+                  type="text"
+                  id="card-number"
+                  value=""
+                  class="textinput tpfield"
+                ></div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="text">有效期限</div>
+              <div class="input">
+                <div
+                  type="text"
+                  id="card-expiration-date"
+                  value=""
+                  class="textinput tpfield"
+                ></div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="text">安全碼</div>
+              <div class="input">
+                <div
+                  type="text"
+                  id="card-code"
+                  value=""
+                  class="textinput tpfield"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="review">
+            <div class="summary">
+              <div class="text">總金額</div>
+              <div class="reviewprice">
+                <span class="reviewtotal">NT.0</span>
+              </div>
+            </div>
+            <div class="summary">
+              <div class="text">運費</div>
+              <div class="reviewprice">
+                <span class="reviewshipment">NT.0</span>
+              </div>
+            </div>
+            <div class="summary">
+              <div class="separator"></div>
+            </div>
+            <div class="summary">
+              <div class="text">應付金額</div>
+              <div class="reviewprice">
+                <span class="reviewtotalpay">NT.0</span>
+              </div>
+            </div>
+            <div class="summary">
+              <button id="checkout">確認付款</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="view">
+        <div class="link n1">
+          <div class="item">關於 Stylish</div>
+          <div class="item">服務條款</div>
+          <div class="item">隱私條款</div>
+        </div>
+        <div class="link n2">
+          <div class="item">聯絡我們</div>
+          <div class="item">FAQ</div>
+        </div>
+        <div class="social">
+          <img alt="line" src="img/line.png" />
+          <img alt="twitter" src="img/twitter.png" />
+          <img alt="facebook" src="img/facebook.png" />
+        </div>
+        <div class="copyright" style="color: #828282">
+          &copy 2018. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="./js/lib.js"></script>
+    <script src="https://js.tappaysdk.com/tpdirect/v5.4.0"></script>
+    <script src="./js/checkout.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/shopcart.js"></script>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+  </body>
+</html>

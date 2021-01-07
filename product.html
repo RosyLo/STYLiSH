@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="韓版小清新女裝：連身洋裝針織直筒牛仔褲。質感男裝：經典休閒西裝襯衫。配件：帽子：遮陽帽牛仔帽隨身包圍巾"
+    />
+
+    <title>Product Page</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+  </head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SMP0F2QQYJ"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SMP0F2QQYJ");
+  </script>
+
+  <body>
+    <script src="./js/fb.js"></script>
+    <header>
+      <div class="logo">
+        <a href="./"> <img alt="logo.png" src="./img/logo.png" /></a>
+      </div>
+      <div class="searchMobile">
+        <img class="search_mobile_icon" alt="search" src="./img/search.png" />
+      </div>
+      <form class="form_mobile" action="index.html" method="GET">
+        <input type="text" class="text_mobile" name="keyword" />
+      </form>
+      <nav>
+        <div class="item">
+          <a href="?tag=women">女裝</a>
+        </div>
+        <div class="item">
+          <a href="?tag=men">男裝</a>
+        </div>
+        <div class="item">
+          <a href="?tag=accessories">配件</a>
+        </div>
+      </nav>
+      <div class="feature">
+        <form class="form" action="index.html" method="GET">
+          <input type="text" class="search" name="keyword" />
+        </form>
+        <a href="./shopcart.html" class="cart">
+          <div id="cart-qty" class="qty"></div>
+        </a>
+        <div class="member">
+          <img alt="to-profile-page" src="./img/member.png" />
+        </div>
+      </div>
+    </header>
+    <nav class="mobile">
+      <div class="item">
+        <a href="?tag=women">女裝</a>
+      </div>
+      <div class="item">
+        <a href="?tag=men">男裝</a>
+      </div>
+      <div class="item" style="border-right: 0px">
+        <a href="?tag=accessories">配件</a>
+      </div>
+    </nav>
+    <div class="feature-mobile">
+      <a class="item" href="./shopcart.html">
+        <div class="cart">
+          <div id="cart-qty" class="qty"></div>
+        </div>
+        &nbsp &nbsp &nbsp 購物車
+      </a>
+      <a class="member">
+        <img class="member" alt="to-profile-page" src="img/member-mobile.png" />
+        &nbsp &nbsp &nbsp 會員
+      </a>
+    </div>
+
+    <main>
+      <div class="view">
+        <div class="productsview">
+          <div class="product-img"></div>
+          <div class="product-details">
+            <div class="product-name"></div>
+            <div class="product-id"></div>
+            <div class="product-price"></div>
+            <div class="product-colors">
+              <span class="title">顏色 &nbsp|</span>
+            </div>
+
+            <div class="product-sizes">
+              <span class="title">尺寸 &nbsp|</span>
+            </div>
+            <div class="products-qty">
+              <span class="title">數量 &nbsp|</span>
+              <div id="product-qty" class="chooser">
+                <div class="op" data-value="-1">-</div>
+                <div class="value"></div>
+                <div class="op" data-value="1">+</div>
+              </div>
+            </div>
+            <div class="product-addCart">
+              <button>加入購物車</button>
+            </div>
+            <div class="product-summary">
+              <span>實品顏色依單品照為主</span><br />
+              <span class="product-texture"></span>
+              <span class="product-description"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="separator">
+          <div class="separator-title">更多產品資訊</div>
+          <div class="separator-line"></div>
+        </div>
+        <div class="description">
+          <div class="description-story"></div>
+          <div class="description-img"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="view">
+        <div class="link n1">
+          <div class="item">關於 Stylish</div>
+          <div class="item">服務條款</div>
+          <div class="item">隱私條款</div>
+        </div>
+        <div class="link n2">
+          <div class="item">聯絡我們</div>
+          <div class="item">FAQ</div>
+        </div>
+        <div class="social">
+          <img alt="line" src="img/line.png" />
+          <img alt="twitter" src="img/twitter.png" />
+          <img alt="facebook" src="img/facebook.png" />
+        </div>
+        <div class="copyright" style="color: #828282">
+          &copy 2018. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="./js/lib.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/product.js"></script>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+  </body>
+</html>
