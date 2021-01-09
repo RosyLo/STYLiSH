@@ -1,6 +1,6 @@
 <p align="center">
 
-    <img src="/img/logo.png" alt="Logo" width="200">
+    <img src="/img/logo.png" alt="Logo" width="200"/>
   </a>
 
   <p align="center">
@@ -33,7 +33,7 @@
 
 ## Demo
 
--   #### Products Explore Page
+-   #### Main Page
 
     -   Slide Show
     -   Product Catregories
@@ -42,7 +42,7 @@
 
     <p>
     <kbd>
-    <img src="./img/readme/explore.gif" >
+    <img src="./img/mainpage.gif" alt="Main Page" >
     </kbd>
     </p>
 
@@ -53,7 +53,7 @@
 
     <p>
     <kbd>
-    <img src="/img/product.gif" >
+    <img src="/img/product.gif" alt="Product Details Page" >
     </kbd>
     </p>
 
@@ -65,7 +65,7 @@
 
     <p>
     <kbd>
-    <img src="./img/cart.gif" >
+    <img src="./img/cart.gif" alt="Shopping Cart Page">
     </kbd>
     </p>
 
@@ -74,7 +74,7 @@
     -   Login with Facebook
    <p>
     <kbd>
-    <img src="./img/profile.png" >
+    <img src="./img/profile.png"  alt="Profile Page" >
     </kbd>
     </p>
 
