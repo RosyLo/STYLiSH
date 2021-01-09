@@ -1,6 +1,6 @@
 <p align="center">
-<a href = "">
-    <img src="https://stylish-8ec3e.web.app/" alt="Logo" width="200" >
+<a href = "https://stylish-8ec3e.web.app/">
+    <img src="/img/logo.png" alt="Logo" width="200" >
     </a>
 
   <p align="center">
@@ -14,8 +14,6 @@
 <kbd>
     <img src="/img/preview.gif" >
 </kbd>
-
-<!-- ## Core Components Structure
 
 
 ## Technologies
