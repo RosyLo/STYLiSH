@@ -73,6 +73,7 @@
 -   #### Profile Page
 
     -   Login with Facebook
+
    <p>
     <kbd>
     <img src="./img/profile.png"  alt="Profile Page" >
