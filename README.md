@@ -74,7 +74,7 @@
 
     -   Login with Facebook
 
-   <p>
+    <p>
     <kbd>
     <img src="./img/profile.png"  alt="Profile Page" >
     </kbd>
