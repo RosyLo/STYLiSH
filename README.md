@@ -16,7 +16,7 @@
 
 
 <kbd>
-    <img src="/img/mainlayout.gif" >
+    <img src="/img/preview.gif" >
 </kbd>
 
 
@@ -43,7 +43,7 @@
 
     <p>
     <kbd>
-    <img src="/img/mainpage.gif" alt="Main Page" >
+    <img src="/img/mainlayout.gif" alt="Main Page" >
     </kbd>
     </p>
 
