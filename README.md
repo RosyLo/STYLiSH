@@ -3,6 +3,8 @@
     <img src="/img/logo.png" alt="Logo" width="200" >
     </a>
 
+
+
   <p align="center">
    STYLiSH provides you an instinctive E-Commerce site with product categories, cart, profile and cashflow process. 
     <br />
@@ -11,8 +13,10 @@
   </p> 
 </p>
 
+
+
 <kbd>
-    <img src="/img/preview.gif" >
+    <img src="/img/mainlayout.gif" >
 </kbd>
 
 
