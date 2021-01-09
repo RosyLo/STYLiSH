@@ -1,7 +1,7 @@
 <p align="center">
-
-    <img src="/img/logo.png" alt="Logo" width="200"/>
-  </a>
+<a href = "">
+    <img src="https://stylish-8ec3e.web.app/" alt="Logo" width="200" >
+    </a>
 
   <p align="center">
    STYLiSH provides you an instinctive E-Commerce site with product categories, cart, profile and cashflow process. 
@@ -17,7 +17,6 @@
 
 <!-- ## Core Components Structure
 
-![](./src/img/src/readme/componentsStructure.jpeg) -->
 
 ## Technologies
 
@@ -42,7 +41,7 @@
 
     <p>
     <kbd>
-    <img src="./img/mainpage.gif" alt="Main Page" >
+    <img src="/img/mainpage.gif" alt="Main Page" >
     </kbd>
     </p>
 
