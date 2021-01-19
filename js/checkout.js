@@ -155,7 +155,6 @@ function onSubmit(event) {
         })
           .then((response) => response.json())
           .then((data) => {
-            console.log("Success:", data);
             window.location.href = `./thankyou.html?number=${data.data.number}`;
             localStorage.clear();
           })

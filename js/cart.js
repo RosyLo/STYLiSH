@@ -66,7 +66,6 @@ function checkCart() {
 /*eslint no-unused-vars: ["error", { "vars": "local" }]*/
 function addCart(addedCartData) {
   overallData = getStorageCart();
-  console.log(overallData);
 
   function ifexist(data) {
     return (

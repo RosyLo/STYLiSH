@@ -126,7 +126,6 @@ function initializeVariants(detailsInfo) {
     //點到的color dataset 的color 值
     const color = e.currentTarget.dataset.color;
     const colorname = e.currentTarget.dataset.colorName;
-    console.log(colorname);
     //將variant 現在的colorCode 改為點擊的dataset colorcode
     variant.colorCode = color;
     variant.colorName = colorname;

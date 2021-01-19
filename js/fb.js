@@ -103,7 +103,6 @@ function updateLogintoSever() {
 function loginstatusChange(response) {
   if (response.status === "connected") {
     fb.auth = response.authResponse;
-    console.log(fb.auth);
     updateLogintoSever();
   } else {
     fb.auth = null;

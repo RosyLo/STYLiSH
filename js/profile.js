@@ -62,7 +62,6 @@ function renderMemberProfile(data) {
   //checkout bottom
 
   checkoutbottom.addEventListener("click", logout);
-  console.log(checkoutbottom);
 }
 
 //若未登入，跳轉 FB login頁
@@ -91,7 +90,6 @@ function clickLogin() {
 function logout() {
   FB.logout(function (response) {
     // Person is now logged out
-    console.log(response);
   });
   window.location.href = "./";
 }
@@ -103,8 +101,6 @@ function getUserProfile(data) {
   })
     .then((res) => res.json())
     .then((responsedata) => {
-      console.log(responsedata);
-      console.log(responsedata.data);
       renderMemberProfile(responsedata.data);
     });
 }
@@ -114,7 +110,6 @@ function updateLogintoSever() {
     provider: "facebook",
     access_token: fb.auth.accessToken,
   };
-  console.log(fbdata);
 
   fetch("https://api.appworks-school.tw/api/1.0/user/signin", {
     method: "POST",
@@ -136,10 +131,8 @@ function updateLogintoSever() {
 function loginstatusChange(response) {
   if (response.status === "connected") {
     fb.auth = response.authResponse;
-    console.log("hi");
     updateLogintoSever();
   } else {
-    console.log("here");
     fb.auth = null;
   }
 }

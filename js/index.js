@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   } else if (tag === "men") {
     tagParam = tag;
-    console.log("access");
     fetchProduct(tag, keyword, paging);
     const navsmen = Array.from(document.querySelectorAll(".men"));
     navsmen.forEach((nav) => {
@@ -170,11 +169,12 @@ function searchProduct(pathtag, keyword) {
       list.innerHTML = listHTML;
     });
 }
-
+let listHTML = "";
 //fetch data function
 function fetchProduct(pathtag, keyword, paging) {
+  products = null;
   let list = document.querySelector(".products");
-  list.innerHTML =
+  list.innerHTML +=
     " <div class='loadingwrap'><div>Loading</div><div class='lds-ellipsis'><div></div><div></div><div></div><div></div></div></div>";
   fetch(
     `https://api.appworks-school.tw/api/1.0/products/${pathtag}?keyword=${keyword}&paging=${paging}`
@@ -185,7 +185,6 @@ function fetchProduct(pathtag, keyword, paging) {
     .then((data) => {
       products = data;
       let listjson = data.data;
-      let listHTML = "";
       for (let i = 0; i < listjson.length; i++) {
         listHTML += "<div class='product'>";
         listHTML += `<a href="./product.html?id=${listjson[i].id}" target ="_black">`;
@@ -219,7 +218,7 @@ window.addEventListener("scroll", () => {
     const documentButtonRelative = document.documentElement.getBoundingClientRect()
       .bottom;
     const reachBottom = documentButtonRelative - viewHeight < 20;
-    if (reachBottom && products.next_paging != undefined) {
+    if (products.next_paging !== undefined && reachBottom) {
       fetchProduct(tagParam, keywordParam, products.next_paging);
     }
   }
